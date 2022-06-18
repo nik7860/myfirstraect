@@ -7,7 +7,7 @@ import Alert from './componants/Alert'
 import React,{ useState } from 'react';
 import About from './componants/About.jsx';
 
-import { Route, Routes,Link} from "react-router-dom";
+
 
 
 
@@ -41,11 +41,11 @@ function App() {
     <Navbar  title="Nikhil" mode={mode} togmode={togmode} color={color}/>
   
     <Alert  alert={alert} />
-    <Routes>
-        <Route exact path="/" element={<Textform head="Enter text" showAlert={showAlert}mode={mode} color={color}/>} />
-        <Route exact path="/about" element={<About />} />
+    
+       <Textform head="Enter text" showAlert={showAlert}mode={mode} color={color}/>
         
-    </Routes>
+        
+  
     
     
     
