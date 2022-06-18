@@ -46,7 +46,7 @@ export default function Textform(props) {
       <button className='btn btn-primary mx-2 my-1' onClick={handlecopy}>Copy</button>
     </div><div className='container'>
         <h1>Your text summary!</h1>
-        <p>{text.split(" ").filter((element)=>{return element,length!==0}).length}words and {text.length}characters</p>
+        <p>{text.split(" ").filter((element)=>{return element.length!==0}).length}words and {text.length}characters</p>
       </div></>
   )
 }
